@@ -184,7 +184,8 @@ body {
 /* Button */
 
 .button {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     border-radius: 4px;
     padding: 10px 29px;
     
@@ -194,7 +195,9 @@ body {
     font-weight: bold;
     font-size: 16px;
     line-height: 1.88;
+
     text-align: center;
+    
     text-decoration: none;
 }
 
@@ -305,7 +308,7 @@ body {
     width: calc((100% - 60px) / 3);
     text-decoration: none; 
     background-position: center;
-    background-color: ;
+    background-color: grey;
     background-repeat: no-repeat;
     background-size: cover;
 }

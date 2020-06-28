@@ -322,11 +322,11 @@ body {
 }
 
 .team-list .link {
-
     display: block;
     width: calc((100% - 90px) / 4);
     text-decoration: none;  
     background-color: var(--primary-white-color); 
+  
 }
 
 .team-list .link:not(:last-child) {

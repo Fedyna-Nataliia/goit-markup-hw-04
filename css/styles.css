@@ -263,7 +263,6 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-
 }
 
 .feature-list .link {
@@ -271,12 +270,16 @@ body {
     width: calc((100% - 90px) / 4);
    
     color: var(--primary-text-color);
-    text-decoration: none;
-    
+    text-decoration: none; 
 }
 
 .feature-list .link:not(:last-child) {
     margin-right: 30px;
+}
+
+.link-feature {
+    width: 70px;
+    height: 70px;
 }
 
 .feature-list p {
@@ -356,15 +359,38 @@ body {
     margin-right: 30px;
 } 
 
+.link-icon {
+    width: 20px;
+    height: 20px;  
+}
+
 .logo-list {
     display: flex;
     margin-top: 0;
     margin-bottom: 24px;
+    margin-right: 32px;
+    margin-left: 32px;
+}
+
+.logo-list .link {
+    width: 44px;
+    height: 44px; 
+    margin-right: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--primary-text-color);
+}
+
+.logo-list .link:not(:last-child) {
+    margin-right: 10px;
 }
 
 .logo-list .link:hover,
-.logo-list .link:focus{
-    color: var(--accent-color)
+.logo-list .link:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-white-color);
 }
 
 /* Clients */
@@ -377,19 +403,26 @@ body {
 .client-list {
     display: flex;
     flex-wrap: wrap; 
-   
 
 }
   
 .client-list .link {
-    display: block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
     width: calc((100% - 150px) / 6);
+    height: 90px;
     text-decoration: none;  
-    
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     text-align: center;
-    
+    fill: #AFB1B8;
+}
+
+.client-list .link:hover,
+.client-list .link:focus {
+    fill: var(--accent-color);
 }
 
 .client-list .link:not(:last-child) {

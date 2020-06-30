@@ -126,12 +126,13 @@ body {
 }
 
 .site-nav .link.current {
-    color: var(--accent-color)
+    color: var(--accent-color);
 }
 
 .auth-nav {
     margin-left: auto;
-    display: flex;   
+    display: flex; 
+    align-items:center;  
 }
 
 .auth-nav .item:not(:last-child) {
@@ -141,6 +142,18 @@ body {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
     color: var(--accent-color);
+}
+
+.logo-mail {
+ content: "";
+ background-size: cover;
+ align-items:center;
+ background-repeat: no-repeat; 
+
+ width: 16px; 
+ height: 11px;
+ margin-right: 10px;
+
 }
 
 /* Hero */
@@ -165,8 +178,6 @@ body {
     background-color: grey;
     background-repeat: no-repeat;
     background-size: cover;
-    
-    
 }
 
 .hero-title {
@@ -555,8 +566,7 @@ body {
 
     padding-top: 0;
     padding-bottom: 94px;
-    
-    
+     
 }
 
 .example-list .title {
@@ -575,7 +585,6 @@ margin-bottom: 4px;
     color: var(--primary-text-color);
     text-decoration: none;
     background-position: center;
-    background-color: grey;
     background-repeat: no-repeat;
     background-size: cover;
 }

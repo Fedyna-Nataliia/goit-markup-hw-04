@@ -597,6 +597,11 @@ margin-bottom: 4px;
     margin-bottom: 30px;
   } 
 
+  .example-list .item:hover,
+  .example-list .item:focus {
+   box-shadow: 24px 4px 6px rgba(0, 0, 0, 0.16);   
+  }
+
 .galery-subtitle {
     margin-top: 0;
     margin-bottom: 20px;

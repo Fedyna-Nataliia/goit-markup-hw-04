@@ -141,11 +141,11 @@ body {
 
 .auth-nav .link:hover,
 .auth-nav .link:focus {
-    color: var(--accent-color);
+ color: var(--accent-color);
+ fill: var(--accent-color);
 }
 
 .logo-mail {
- content: "";
  background-size: cover;
  align-items:center;
  background-repeat: no-repeat; 
@@ -153,6 +153,7 @@ body {
  width: 16px; 
  height: 11px;
  margin-right: 10px;
+ 
 
 }
 
@@ -286,6 +287,15 @@ body {
 
 .feature-list .link:not(:last-child) {
     margin-right: 30px;
+}
+
+.feature-list .feature {
+    height: 120px;
+    background-color: #F5F4FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .link-feature {
@@ -434,6 +444,7 @@ body {
 .client-list .link:hover,
 .client-list .link:focus {
     fill: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .client-list .link:not(:last-child) {
@@ -490,6 +501,10 @@ body {
     color: var(--primary-white-color);
 }
 
+.footer-social .link {
+    background-color: rgba(255, 255, 255, 0.1);;
+}
+
 .subscribe b {
     display: block;
     color: var(--primary-white-color);
@@ -498,6 +513,29 @@ body {
 .button .primary {
     padding: 29px 10px 28px 10px;
     min-width: 200px;
+   
+}
+
+
+.subscribe .logo-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px; 
+    margin-left: 10px;
+
+}
+
+.subscribe .button {
+    fill: var(--primary-text-color);
+
+}
+
+.subscribe .a:hover,
+.subscribe .a:focus {
+    color: var(--primary-white-color);
+    fill: var(--primary-white-color);   
 }
 
 
@@ -570,8 +608,9 @@ body {
 }
 
 .example-list .title {
-margin-top: 0;
-margin-bottom: 4px;
+    margin-top: 0;
+    margin-bottom: 4px;
+    margin-left: 24px;
 
     color: var(--title-tex-color);
     font-weight: 700;
@@ -583,6 +622,7 @@ margin-bottom: 4px;
     display: block;
     width: calc((100% - 60px) / 3);
     color: var(--primary-text-color);
+    border: 1px solid #EEEEEE;
     text-decoration: none;
     background-position: center;
     background-repeat: no-repeat;
@@ -599,12 +639,13 @@ margin-bottom: 4px;
 
   .example-list .item:hover,
   .example-list .item:focus {
-   box-shadow: 24px 4px 6px rgba(0, 0, 0, 0.16);   
+   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
   }
 
 .galery-subtitle {
     margin-top: 0;
     margin-bottom: 20px;
+    margin-left: 24px;
 
     color: var(--primary-text-color);
     font-weight: 400;
@@ -620,6 +661,7 @@ a {
 .galery-text {
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: 24px;
 
     color: var(--primary-text-color);
     font-weight: 400;

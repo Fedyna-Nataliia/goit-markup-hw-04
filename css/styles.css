@@ -38,6 +38,7 @@ body {
     letter-spacing: -0.015em;
     font-size: 14px;
     line-height: 1.71;
+    
   }
 
 
@@ -234,6 +235,7 @@ body {
     color: var(--primary-text-color);
 
     text-decoration: none;
+    cursor: pointer;
 }
 .section-title {
     margin-top: 0;
@@ -402,6 +404,7 @@ body {
     align-items: center;
     justify-content: center;
     fill: var(--primary-text-color);
+    box-shadow: none;
 }
 
 .logo-list .link:not(:last-child) {
@@ -454,7 +457,6 @@ body {
 /* Footer */
 
 .page-footer {
-    
     background-color: var(--footer-color);
 }
 
@@ -516,7 +518,6 @@ body {
    
 }
 
-
 .subscribe .logo-primary {
     display: flex;
     align-items: center;
@@ -532,9 +533,8 @@ body {
 
 }
 
-.subscribe .a:hover,
-.subscribe .a:focus {
-    color: var(--primary-white-color);
+.button:hover .logo-primary,
+.button:focus .logo-primary {
     fill: var(--primary-white-color);   
 }
 

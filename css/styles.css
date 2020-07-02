@@ -427,26 +427,34 @@ body {
 .client-list {
     display: flex;
     flex-wrap: wrap; 
-
+   
 }
   
 .client-list .link {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-
+    text-align: center;
+    
     width: calc((100% - 150px) / 6);
     height: 90px;
     text-decoration: none;  
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    text-align: center;
+   
+}
+
+.client-list .item {
     fill: #AFB1B8;
+    
+}
+
+.link:hover .item {
+    fill: var(--accent-color);   
 }
 
 .client-list .link:hover,
 .client-list .link:focus {
-    fill: var(--accent-color);
     border-color: var(--accent-color);
 }
 
@@ -504,6 +512,7 @@ body {
 }
 
 .footer-social .link {
+    fill: var(--primary-white-color);
     background-color: rgba(255, 255, 255, 0.1);;
 }
 
@@ -526,16 +535,16 @@ body {
     height: 24px; 
     margin-left: 10px;
 
+
 }
 
 .subscribe .button {
     fill: var(--primary-text-color);
 
 }
-
 .button:hover .logo-primary,
 .button:focus .logo-primary {
-    fill: var(--primary-white-color);   
+    fill: var(--primary-white-color);
 }
 
 

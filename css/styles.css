@@ -429,13 +429,15 @@ body {
     flex-wrap: wrap; 
    
 }
+
+
   
 .client-list .link {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    
+    text-align: center; 
+
     width: calc((100% - 150px) / 6);
     height: 90px;
     text-decoration: none;  
@@ -444,10 +446,9 @@ body {
     
 }
 
-
-
 .client-list .item {
-
+    display: flex;
+    justify-content: center;
     fill: #AFB1B8;
     
 }
